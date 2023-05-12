@@ -218,7 +218,7 @@ body {
 .grid-item { margin: 5px; }
 /* 缩小图片 */
 .grid-item img {
-  transform: scale(0.3);
+  width: 30%;
 }
 /* Firefox hack 
    https://css-tricks.com/snippets/css/css-hacks-targeting-firefox/
