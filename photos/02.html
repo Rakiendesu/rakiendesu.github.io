@@ -11,6 +11,10 @@
     <title>图库&壁纸</title>
 	
 	<style>
+	/*锁定滚动条*/
+	body {
+	  overflow: hidden;
+	}
 #loading{
 	background-color: #fa8739;
 	height: 100%;
@@ -19,6 +23,12 @@
 	z-index: 1;
 	margin-top: 0px;
 	top: 0px;
+	  position: fixed; /* 固定位置 */
+	  top: 0;
+	  left: 0;
+	  right: 0;
+	  bottom: 0;
+	  z-index: 9999; /* 设置 z-index 值，确保它在最上层 */
 }
 #loading-center{
 	width: 100%;
@@ -157,10 +167,14 @@
 	
 
     <div id="photos" class="box rthumbnail">
+	
         <a href="https://smms.app/image/7nP1QXzENodcaUk" target="_blank"><img src="https://s2.loli.net/2023/05/12/7nP1QXzENodcaUk.jpg" alt="xinhai.jpg"></a>
         <a href="https://smms.app/image/txNXIZz5ElFw8sT" target="_blank"><img src="https://s2.loli.net/2023/05/12/txNXIZz5ElFw8sT.jpg" alt="ying.jpg"></a>
         <a href="https://smms.app/image/sCeWvoMwqdZErBS" target="_blank"><img src="https://s2.loli.net/2023/05/12/sCeWvoMwqdZErBS.jpg" alt="丽莎.jpg"></a>
         <a href="https://smms.app/image/cwVYfpTk3RszGm2" target="_blank"><img src="https://s2.loli.net/2023/05/11/cwVYfpTk3RszGm2.png" alt="xg.png"></a>
+        <a href="https://smms.app/image/CSrBbkoEpz1Yxt5" target="_blank"><img src="https://s2.loli.net/2023/05/11/CSrBbkoEpz1Yxt5.jpg" alt="falushan2.jpg"></a>
+        <a href="https://smms.app/image/SM8WGP21auvDZh6" target="_blank"><img src="https://s2.loli.net/2023/05/11/SM8WGP21auvDZh6.jpg" alt="falushan.jpg"></a>
+
     </div>
 	
 	
@@ -169,7 +183,7 @@
     <div>
 
 		<a href="https://rakien.top" target="_blank" class="float-button-left">返回博客</a>
-		<a href="https://photo.rakien.top/photos/02.html" target="_blank" class="float-button-right">下一页</a>
+		<a href="https://photo.rakien.top/photos/03.html" target="_blank" class="float-button-right">下一页</a>
 	</div>
 
 
@@ -182,14 +196,17 @@
 	
 	
     <script>
-	    //加载完成后删除加载界面
-$(document).ready(function() {
-    // 监听文档加载完毕事件
-    $(window).on('load', function() {
-        // 隐藏loading元素，用2秒的时间淡出
-        $('#loading').fadeOut(2000);
-    });
-});
+	    //加载完成后删除加载界面，并且解锁滚动条
+	$(document).ready(function() {
+	  // 监听文档加载完毕事件
+	  $(window).on('load', function() {
+		// 隐藏 loading 元素
+		$('#loading').fadeOut('slow', function() {
+		  // 移除 overflow 样式
+		  $('body').css('overflow', 'auto');
+		});
+	  });
+	});
 	    
 	    
 	    
