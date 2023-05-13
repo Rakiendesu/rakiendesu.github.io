@@ -12,7 +12,7 @@
 	
 	<style>
 #loading{
-	background-color: #db5800;
+	background-color: #fa8739;
 	height: 100%;
 	width: 100%;
 	position: fixed;
@@ -253,12 +253,12 @@
 	
 	
     <script>
-	    
-	    $(document).ready(function() {
+	    //加载完成后删除加载界面
+$(document).ready(function() {
     // 监听文档加载完毕事件
     $(window).on('load', function() {
-        // 隐藏loading元素
-        $('#loading').hide();
+        // 隐藏loading元素，用2秒的时间淡出
+        $('#loading').fadeOut(2000);
     });
 });
 	    
