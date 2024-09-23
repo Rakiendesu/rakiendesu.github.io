@@ -1,5 +1,10 @@
 [
-    {
+  {
+    "html": "<iframe frameborder=‘no’ border=‘0’ marginwidth=‘0’ marginheight=‘0’ width=298 height=52 src=‘https://music.163.com/outchain/player?type=2&id=2611468475&auto=0&height=32’></iframe>",
+    "content": "网易云iframe测试",
+    "date": "2024年9月23日"
+  },
+  {
     "html": "<div class='aplayer' data-id='477332351' data-server='netease' data-type='song' data-fixed='false' data-autoplay='false'> </div>",
     "content": "音乐分享测试，我服了 用ajax没法加载🥲",
     "date": "2024年9月23日"
