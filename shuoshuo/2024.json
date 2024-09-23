@@ -1,15 +1,5 @@
 [
   {
-    "html": "<iframe frameborder=‘no’ border=‘0’ marginwidth=‘0’ marginheight=‘0’ width=228 height=52 src=‘//music.163.com/outchain/player?type=2&id=2611468475&auto=0&height=32’></iframe>",
-    "content": "网易云iframe测试",
-    "date": "2024年9月23日"
-  },
-  {
-    "html": "<div class='aplayer' data-id='477332351' data-server='netease' data-type='song' data-fixed='false' data-autoplay='false'> </div>",
-    "content": "音乐分享测试，我服了 用ajax没法加载🥲",
-    "date": "2024年9月23日"
-  },
-  {
     "html": "<img src='https://s2.loli.net/2024/09/18/pHgtRQ6mU4NfjGM.jpg' />",
     "content": "朋友那借的吉他试一下，就是弦距有点大",
     "date": "2024年9月23日"
